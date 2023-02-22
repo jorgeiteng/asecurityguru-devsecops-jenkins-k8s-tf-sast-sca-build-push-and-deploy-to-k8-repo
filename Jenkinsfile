@@ -27,7 +27,7 @@ pipeline {
                }
             }
     }
-
+/*
 	stage('Push') {
             steps {
                 script{
@@ -37,7 +37,7 @@ pipeline {
                 }
             }
     	}
-	   
+	*/   
 	stage('Kubernetes Deployment of ASG Bugg Web Application') {
 	   steps {
 	      withKubeConfig([credentialsId: 'kubelogin']) {
